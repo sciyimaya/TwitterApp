@@ -62,7 +62,7 @@ class TweetCellTableViewCell: UITableViewCell {
             TwitterAPICaller.client?.unfavoriteTweet(tweetId: tweetId, success: {
                 self.setFavorite(false)
             }, failure: { (error) in
-                print("Unfavorite did not succeed \(error)")
+                print("Unfavorite did not succeed  \(error)")
             })
         }
     }
